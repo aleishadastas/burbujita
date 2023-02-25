@@ -1,25 +1,28 @@
-let total = document.getElementById("total")
-let buttonOne = document.getElementById("buttonOne")
-let buttonTwo = document.getElementById("buttonTwo")
-let buttonThree = document.getElementById("buttonThree")
-let buttonBool = false
-let numberVar = 0
-let numberVar1 = 0
-let numberVar2 = 0
-let numberVar3 = 0
-let entry = document.getElementById("fifthEntry")
+//Variables
+let total = document.getElementById("total") //Total button press counter
+let buttonOne = document.getElementById("buttonOne") //First button variable
+let buttonTwo = document.getElementById("buttonTwo") //Second button variable
+let buttonThree = document.getElementById("buttonThree") //Third button variable
+let buttonBool = false //Value
+let numberVar = 0 //Number Variable for Total
+let numberVar1 = 0 //Number Variable for first button
+let numberVar2 = 0 //Number Variable for second button
+let numberVar3 = 0 //Number Variable for third button
+let entry = document.getElementById("fifthEntry") //Variable for third button spawned text
 
 // Button 1 Event Listener
 buttonOne.addEventListener('click', ()=>{
     console.log('button one pressed')
     numberVar += 1
-    numberVar1 += 1
+    numberVar1 += 1 
+    //Total count manipulations
     total.innerHTML = "all of the buttons have been pressed " + numberVar + " time(s) *ੈ✩‧₊˚"
     total.style.textAlign = "center"
     total.style.marginLeft = "0"
     buttonOne.innerHTML = "this button has been pressed " + numberVar1 + " time(s)"
     buttonBool =! buttonBool
-    if (buttonBool == true){
+    //If-then statement for button 1 styles + functions
+    if (buttonBool == true){ 
     buttonOne.style.fontSize = "2vw"
     document.body.style.backgroundColor = "black"
     document.body.style.color = "white"
@@ -42,11 +45,13 @@ buttonTwo.addEventListener('click', ()=>{
     numberVar += 1
     numberVar2 += 1
     buttonTwo.innerHTML = "this button has been pressed " + numberVar2 + " time(s)"
+    //Total count manipulations
     total.innerHTML = "all of the buttons have been pressed " + numberVar + " time(s) *ੈ✩‧₊˚"
     total.style.textAlign = "center"
     total.style.marginLeft = "0"
+    //If-then statement for button 2 styles + functions
     buttonBool =! buttonBool
-    if (buttonBool == true){
+    if (buttonBool == true){ 
     buttonTwo.style.fontSize = "2vw"
     buttonTwo.style.backgroundColor = "#fa5043"
     buttonTwo.style.height = "24vw"
@@ -60,7 +65,7 @@ buttonTwo.addEventListener('click', ()=>{
     }
 })
 
-buttonThree.addEventListener('click', ()=>{
+buttonThree.addEventListener('click', ()=>{ //Functions and styles for button 3
     console.log('button three pressed')
     entry.append("hello there! ")
     entry.style.color = "grey"
@@ -68,8 +73,8 @@ buttonThree.addEventListener('click', ()=>{
     numberVar += 1
     buttonThree.innerHTML = "this button has been pressed " + numberVar3 + " time(s)"
     total.innerHTML = "all of the buttons have been pressed " + numberVar + " time(s) *ੈ✩‧₊˚"
-    total.style.textAlign = "center"
-    total.style.marginLeft = "0"
+    total.style.textAlign = "center" //Total count manipulation
+    total.style.marginLeft = "0" //Total count manipulation
     buttonThree.style.padding = "10px"
     buttonThree.style.fontSize = "2vw"
     

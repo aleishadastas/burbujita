@@ -17,7 +17,6 @@ body{
     background-color: white;
 }
 
-
   /* Button Container */
   .flexContainer {
     display: flex;
@@ -79,6 +78,7 @@ margin-left: -2.8vw;
     margin-right: 10vw;
 }
 
+/* Total Count */
 #total{
     font-size: 3vw;
     text-align: left;
