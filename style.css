@@ -1,0 +1,87 @@
+/* Fonts: Junicode */
+@font-face {
+    font-family: "Junicode", serif;
+    src: url(Junicode.ttf);
+}
+@font-face {
+    font-family: "JunicodeItalic", serif;
+    src: url(Junicode-Bold.ttf);
+}
+@font-face {
+    font-family: "JunicodeBold", serif;
+    src: url(Junicode-Italic.ttf);
+}  
+/* General Body Style */
+body{
+    font-family: "Junicode";
+    background-color: white;
+}
+
+
+  /* Button Container */
+  .flexContainer {
+    display: flex;
+    background-color: none;
+    flex-direction: row;
+     flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    top: 9vw;
+    justify-content: center; 
+  }
+
+
+  /* Button Styles */
+button{
+    font-family: "Junicode";
+    font-size: 3vw;
+    color: black;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 3vw;
+    width: 20vw;
+    text-align: center;
+  }
+
+  button:hover{
+  background-color:#facbbb;
+  font-family: "Junicode-Italic";
+  transition: all .2s ease-in-out; /* button hoover transition*/
+  }
+
+  /* Button Superscripts */
+  sup{
+    font-size: 1.5vw;
+  }
+
+/* Legend Style */
+.buttonLegend{
+    margin-left: 12vw;
+    margin-top: 19vw;
+    line-height: 20px;
+    font-size: 1vw;
+}
+
+#firstEntry{
+margin-left: -2.8vw;
+}
+
+#secondEntry{
+    margin-left: -.5vw;   
+}
+
+/* Third Button + Fourth Entry Style */
+#fifthEntry{
+    margin-left: 1.5vw;
+    margin-top: .5vw;
+    margin-right: 10vw;
+}
+
+#total{
+    font-size: 3vw;
+    text-align: left;
+    margin-top: 4vw;
+    margin-left: 10vw;
+}
