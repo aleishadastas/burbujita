@@ -8,12 +8,14 @@ let numberVar = 0 //Number Variable for Total
 let numberVar1 = 0 //Number Variable for first button
 let numberVar2 = 0 //Number Variable for second button
 let numberVar3 = 0 //Number Variable for third button
+// let total = 0 //
+// counterTotal = counterOne + counterTwo + counterThree add to each eventListener
 let entry = document.getElementById("fifthEntry") //Variable for third button spawned text
 
 // Button 1 Event Listener
-buttonOne.addEventListener('click', ()=>{
+buttonOne.addEventListener('click', ()=>{ //condition, anonymous function//
     console.log('button one pressed')
-    numberVar += 1
+    numberVar += 1 //or numberVar ++
     numberVar1 += 1 
     //Total count manipulations
     total.innerHTML = "all of the buttons have been pressed " + numberVar + " time(s) *ੈ✩‧₊˚"
@@ -49,9 +51,9 @@ buttonTwo.addEventListener('click', ()=>{
     total.innerHTML = "all of the buttons have been pressed " + numberVar + " time(s) *ੈ✩‧₊˚"
     total.style.textAlign = "center"
     total.style.marginLeft = "0"
-    //If-then statement for button 2 styles + functions
+    //If-then statement for button 2 styles + functions//
     buttonBool =! buttonBool
-    if (buttonBool == true){ 
+    if (buttonBool == true){ // with boolean statements you can just use bool variable. ! used for false (not bool)//
     buttonTwo.style.fontSize = "2vw"
     buttonTwo.style.backgroundColor = "#fa5043"
     buttonTwo.style.height = "24vw"
@@ -81,3 +83,5 @@ buttonThree.addEventListener('click', ()=>{ //Functions and styles for button 3
 })
 
  
+//solution to total: add all id's in function ot generalize in arrays
+//function addtotal = counterThree + counterTwo + counterOne
